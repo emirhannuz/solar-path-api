@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, redirect
 from daily_sun_path import dsp
 from api_connection import api
 from json import dumps
@@ -14,7 +14,7 @@ def page_not_found(e):
 
 @app.route('/')
 def index():
-    return 'Documentation'
+    return redirect("https://documenter.getpostman.com/view/12721915/TWDdiYeE", code=302)
 
 
 @app.route('/api/v1/solar-path', methods=['GET'])
