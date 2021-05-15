@@ -14,6 +14,7 @@ def page_not_found(e):
 
 @app.route('/')
 def index():
+    #api dokümantasyonuna yönlendir.
     return redirect("https://documenter.getpostman.com/view/12721915/TWDdiYeE", code=302)
 
 
