@@ -1,6 +1,5 @@
 import math
 
-
 def sind(degree):
     return math.sin(math.radians(degree))
 
@@ -10,6 +9,7 @@ def cosd(degree):
 
 
 def asind(degree):
+    #arcsinus
     return math.degrees(math.asin(degree))
 
 
