@@ -1,6 +1,5 @@
 from .datetime_tools import string_to_date, string_to_time
 
-
 class Location:
     def __init__(self, city_name, timezone, time, date, latitude, longitude):
         self.city_name = city_name
